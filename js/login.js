@@ -5,5 +5,13 @@ document.getElementById('login-button').addEventListener('click', function(event
     event.preventDefault();
     // step 3: get the phone number
     const phoneNumber = document.getElementById('phone-number').value;
-    console.log(phoneNumber);
+    const pinNumber = document.getElementById('pin-number').value;
+    console.log(phoneNumber, pinNumber);
+    if(phoneNumber === '55' && pinNumber === '55'){
+        console.log('You are logged in successfully');
+        window.location.href = '/home.html'
+    }
+    else{
+        alert('Please Provide Correct Details')
+    }
 });
