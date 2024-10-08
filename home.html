@@ -29,6 +29,7 @@
                         <!-- Feature Starts -->
                         <div><button id="show-add-money" class="btn">Add Money</button>
                             <button id="show-cashout" class="btn">Cash Out</button>
+                            <button id="show-transaction" class="btn">Transaction</button>
                         </div>
                         <div class="divider"></div>
                         <!-- Feature Ends -->
@@ -47,7 +48,7 @@
                                     <label class="label">
                                         <span class="label-text">Pin Number</span>
                                     </label>
-                                    <input id="pin-number1" type="password" placeholder="Enter Pin" class="input input-bordered"
+                                    <input id="pin-number1" type="password" placeholder="Use Pin: 1234" class="input input-bordered"
                                         required />
                                     <label class="label">
                                         <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
@@ -72,7 +73,7 @@
                                     <label class="label">
                                         <span class="label-text">Pin Number</span>
                                     </label>
-                                    <input id="pin-number2" type="password" placeholder="Enter Pin" class="input input-bordered"
+                                    <input id="pin-number2" type="password" placeholder="Use Pin: 1234" class="input input-bordered"
                                         required />
                                     <label class="label">
                                         <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
@@ -83,6 +84,13 @@
                                 </div>
                             </form>
                         </div>
+                        <!-- Transaction Form -->
+                         <div id="transaction-history" class="hidden">
+                            <h2 class="text-3xl mb-2">Transaction History</h2>
+                            <div id="transaction-container" class="space-y-2">
+
+                            </div>
+                         </div>
                         <!-- Form Ends -->
                     </div>
                 </div>
@@ -91,7 +99,7 @@
         </section>
     </main>
     <script src="js/features.js"></script>
-    <script src="js/input.js"></script>
+    <script src="js/utilities.js"></script>
     <script src="js/addMoney.js"></script>
     <script src="js/cashout.js"></script>
 </body>

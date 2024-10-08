@@ -1,11 +1,20 @@
-// show the cash out form
-document.getElementById('show-cashout').addEventListener('click', function(){
-    // console.log('show cashout button clicked')
-    document.getElementById('cashout-form').classList.remove('hidden');
-
-    document.getElementById('add-money-form').classList.add('hidden');
+// show add money form
+document.getElementById('show-add-money')
+.addEventListener('click', function(){
+    console.log('show add money');
+    showSectionById('add-money-form');
 })
-document.getElementById('show-add-money').addEventListener('click', function(){
-    document.getElementById('add-money-form').classList.remove('hidden');
-    document.getElementById('cashout-form').classList.add('hidden')
+
+// show cash-out form
+document.getElementById('show-cashout')
+.addEventListener('click', function(){
+    console.log('show cashout');
+    showSectionById('cashout-form')
+})
+
+// show transaction history
+document.getElementById('show-transaction')
+.addEventListener('click', function(){
+    console.log('Show Transaction History');
+    showSectionById('transaction-history');
 })
